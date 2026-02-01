@@ -262,7 +262,40 @@ BEGIN
 END;
 $$ language 'plpgsql';
 
--- Apply updated_at triggers to relevant tables
+CREATE TABLE profiles.privacy_settings (
+    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    farmer_id UUID NOT NULL REFERENCES profiles.farmers(id) ON DELETE CASCADE,
+    share_location_data BOOLEAN DEFAULT false,
+    share_financial_data BOOLEAN DEFAULT false,
+    share_personal_info BOOLEAN DEFAULT false,
+    allow_marketing_communication BOOLEAN DEFAULT false,
+    data_retention_period INTEGER DEFAULT 24, -- months
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE profiles.data_sharing_consents (
+    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    farmer_id UUID NOT NULL REFERENCES profiles.farmers(id) ON DELETE CASCADE,
+    consent_type VARCHAR(50) NOT NULL, -- data_collection, data_processing, data_sharing, marketing
+    granted BOOLEAN NOT NULL,
+    granted_at TIMESTAMP WITH TIME ZONE NOT NULL,
+    expires_at TIMESTAMP WITH TIME ZONE,
+    purpose TEXT NOT NULL,
+    data_types JSONB NOT NULL, -- Array of data types
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Indexes for privacy tables
+CREATE INDEX idx_privacy_settings_farmer ON profiles.privacy_settings(farmer_id);
+CREATE INDEX idx_data_sharing_consents_farmer ON profiles.data_sharing_consents(farmer_id);
+CREATE INDEX idx_data_sharing_consents_type ON profiles.data_sharing_consents(consent_type);
+CREATE INDEX idx_data_sharing_consents_granted ON profiles.data_sharing_consents(granted);
+
+-- Apply updated_at triggers to privacy tables
+CREATE TRIGGER update_privacy_settings_updated_at BEFORE UPDATE ON profiles.privacy_settings FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+CREATE TRIGGER update_data_sharing_consents_updated_at BEFORE UPDATE ON profiles.data_sharing_consents FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
 CREATE TRIGGER update_farmers_updated_at BEFORE UPDATE ON profiles.farmers FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
 CREATE TRIGGER update_locations_updated_at BEFORE UPDATE ON profiles.locations FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
 CREATE TRIGGER update_land_details_updated_at BEFORE UPDATE ON profiles.land_details FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();

@@ -1,0 +1,29 @@
+{
+  "filename": "test-land.jpg",
+  "size": 15,
+  "mimeType": "image/jpeg",
+  "uploadedAt": "2026-01-31T18:01:26.985Z",
+  "farmerId": "farmer123",
+  "location": {
+    "latitude": 12.9716,
+    "longitude": 77.5946
+  },
+  "deviceInfo": {
+    "orientation": 1
+  },
+  "processingApplied": [
+    "orientation_correction",
+    "resize"
+  ],
+  "qualityMetrics": {
+    "sharpness": 0,
+    "brightness": 0.5006535947712418,
+    "contrast": 0.12679738562091505,
+    "colorfulness": 0.05333910003425664
+  },
+  "storagePaths": {
+    "original": "test-uploads\\land_1769882486985_4b3bcc3f_c33b8114_original.jpg",
+    "processed": "test-uploads\\land_1769882486985_4b3bcc3f_c33b8114_processed.jpg",
+    "thumbnail": "test-thumbnails\\land_1769882486985_4b3bcc3f_c33b8114_thumb.jpg"
+  }
+}
