@@ -1,3 +1,11 @@
+## Intellectual Property Notice
+
+This project (GramAI Advisor), including its architecture, workflows,
+specifications, documentation, and implementation, is proprietary.
+
+Any use, reproduction, modification, redistribution, or commercialisation
+of this project requires explicit written permission from the author.
+
 # GramAI Advisor
 
 AI-powered rural decision support platform for Indian farmers.
