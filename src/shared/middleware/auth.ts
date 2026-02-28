@@ -34,7 +34,7 @@ class AuthService {
   // Generate access token
   public generateAccessToken(payload: JWTPayload): string {
     return jwt.sign(payload, this.jwtSecret, {
-      expiresIn: this.jwtExpiresIn,
+      expiresIn: this.jwtExpiresIn as string | number,
       issuer: appConfig.app.name,
       audience: 'gramai-users',
     });
@@ -43,7 +43,7 @@ class AuthService {
   // Generate refresh token
   public generateRefreshToken(payload: JWTPayload): string {
     return jwt.sign(payload, this.jwtSecret, {
-      expiresIn: this.refreshExpiresIn,
+      expiresIn: this.refreshExpiresIn as string | number,
       issuer: appConfig.app.name,
       audience: 'gramai-refresh',
     });
