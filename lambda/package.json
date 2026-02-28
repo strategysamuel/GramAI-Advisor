@@ -1,0 +1,20 @@
+{
+  "name": "gramai-advisory-lambda",
+  "version": "1.0.0",
+  "description": "GramAI Advisor Lambda Function",
+  "main": "src/handler.js",
+  "scripts": {
+    "package": "npm install --production && zip -r deployment.zip src/ node_modules/ package.json",
+    "deploy": "npm run package && aws lambda update-function-code --function-name gramai-advisory-handler --zip-file fileb://deployment.zip --region ap-south-1"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.490.0",
+    "@aws-sdk/client-dynamodb": "^3.490.0",
+    "@aws-sdk/client-s3": "^3.490.0",
+    "@aws-sdk/client-translate": "^3.490.0",
+    "@aws-sdk/util-dynamodb": "^3.490.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

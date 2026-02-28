@@ -1,0 +1,181 @@
+[
+  {
+    "id": "PM-KISAN",
+    "name": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+    "category": "Income Support",
+    "level": "Central",
+    "description": "Direct income support of ₹6000 per year to all farmer families",
+    "benefits": [
+      {
+        "type": "Financial",
+        "amount": 6000,
+        "description": "₹2000 per installment, 3 times a year"
+      }
+    ],
+    "eligibility": {
+      "criteria": ["All farmer families", "Land ownership proof required"],
+      "documents": ["Aadhaar", "Bank account", "Land records"]
+    },
+    "applicableStates": ["All"],
+    "minLandSize": 0,
+    "maxLandSize": null,
+    "priority": 10,
+    "website": "https://pmkisan.gov.in"
+  },
+  {
+    "id": "PMFBY",
+    "name": "Pradhan Mantri Fasal Bima Yojana",
+    "category": "Crop Insurance",
+    "level": "Central",
+    "description": "Comprehensive crop insurance scheme for all farmers",
+    "benefits": [
+      {
+        "type": "Insurance",
+        "description": "Coverage against crop loss due to natural calamities"
+      }
+    ],
+    "eligibility": {
+      "criteria": ["All farmers", "Enrolled for the season"],
+      "documents": ["Aadhaar", "Bank account", "Land records", "Crop details"]
+    },
+    "applicableStates": ["All"],
+    "minLandSize": 0,
+    "maxLandSize": null,
+    "priority": 9,
+    "website": "https://pmfby.gov.in"
+  },
+  {
+    "id": "KCC",
+    "name": "Kisan Credit Card",
+    "category": "Credit",
+    "level": "Central",
+    "description": "Credit facility for farmers to meet agricultural expenses",
+    "benefits": [
+      {
+        "type": "Credit",
+        "description": "Low-interest credit up to ₹3 lakhs"
+      }
+    ],
+    "eligibility": {
+      "criteria": ["Farmers with land ownership", "Good credit history"],
+      "documents": ["Aadhaar", "PAN", "Land records", "Bank account"]
+    },
+    "applicableStates": ["All"],
+    "minLandSize": 0.5,
+    "maxLandSize": null,
+    "priority": 8,
+    "website": "https://www.nabard.org/kcc.aspx"
+  },
+  {
+    "id": "SOIL-HEALTH",
+    "name": "Soil Health Card Scheme",
+    "category": "Soil Management",
+    "level": "Central",
+    "description": "Free soil testing and health card for farmers",
+    "benefits": [
+      {
+        "type": "Service",
+        "description": "Free soil testing and nutrient recommendations"
+      }
+    ],
+    "eligibility": {
+      "criteria": ["All farmers"],
+      "documents": ["Aadhaar", "Land records"]
+    },
+    "applicableStates": ["All"],
+    "minLandSize": 0,
+    "maxLandSize": null,
+    "priority": 7,
+    "website": "https://soilhealth.dac.gov.in"
+  },
+  {
+    "id": "PMKSY",
+    "name": "Pradhan Mantri Krishi Sinchayee Yojana",
+    "category": "Irrigation",
+    "level": "Central",
+    "description": "Subsidy for micro-irrigation systems",
+    "benefits": [
+      {
+        "type": "Subsidy",
+        "percentage": 55,
+        "description": "55% subsidy on drip/sprinkler irrigation"
+      }
+    ],
+    "eligibility": {
+      "criteria": ["Farmers with irrigation needs", "Land ownership"],
+      "documents": ["Aadhaar", "Land records", "Bank account"]
+    },
+    "applicableStates": ["All"],
+    "minLandSize": 0.5,
+    "maxLandSize": null,
+    "priority": 6,
+    "website": "https://pmksy.gov.in"
+  },
+  {
+    "id": "PARAMPARAGAT",
+    "name": "Paramparagat Krishi Vikas Yojana",
+    "category": "Organic Farming",
+    "level": "Central",
+    "description": "Support for organic farming through cluster approach",
+    "benefits": [
+      {
+        "type": "Financial",
+        "amount": 50000,
+        "description": "₹50,000 per hectare over 3 years"
+      }
+    ],
+    "eligibility": {
+      "criteria": ["Farmers interested in organic farming", "Cluster formation"],
+      "documents": ["Aadhaar", "Land records", "Bank account"]
+    },
+    "applicableStates": ["All"],
+    "minLandSize": 0.5,
+    "maxLandSize": null,
+    "priority": 5,
+    "website": "https://pgsindia-ncof.gov.in"
+  },
+  {
+    "id": "RKVY",
+    "name": "Rashtriya Krishi Vikas Yojana",
+    "category": "Agricultural Development",
+    "level": "Central",
+    "description": "State-specific agricultural development projects",
+    "benefits": [
+      {
+        "type": "Infrastructure",
+        "description": "Support for agricultural infrastructure and mechanization"
+      }
+    ],
+    "eligibility": {
+      "criteria": ["Varies by state project"],
+      "documents": ["Aadhaar", "Land records"]
+    },
+    "applicableStates": ["All"],
+    "minLandSize": 0,
+    "maxLandSize": null,
+    "priority": 4,
+    "website": "https://rkvy.nic.in"
+  },
+  {
+    "id": "NMSA",
+    "name": "National Mission for Sustainable Agriculture",
+    "category": "Sustainable Agriculture",
+    "level": "Central",
+    "description": "Promoting sustainable agriculture practices",
+    "benefits": [
+      {
+        "type": "Technical",
+        "description": "Training and support for sustainable practices"
+      }
+    ],
+    "eligibility": {
+      "criteria": ["All farmers"],
+      "documents": ["Aadhaar"]
+    },
+    "applicableStates": ["All"],
+    "minLandSize": 0,
+    "maxLandSize": null,
+    "priority": 3,
+    "website": "https://nmsa.dac.gov.in"
+  }
+]

@@ -74,8 +74,8 @@
 ## Phase 3: Advisory and Intelligence Services
 
 ### 9. Advisory Engine Implementation
-- [ ] 9.1 Create crop recommendation algorithm with multi-factor analysis (Requirement 6.1)
-- [ ] 9.2 Implement sustainable farming practices database and recommendations (Requirement 6.2)
+- [x] 9.1 Create crop recommendation algorithm with multi-factor analysis (Requirement 6.1)
+- [x] 9.2 Implement sustainable farming practices database and recommendations (Requirement 6.2)
 - [ ] 9.3 Create high-value crop identification with skill requirements (Requirement 6.3)
 - [ ] 9.4 Implement pest and disease identification system (Requirement 6.4)
 - [ ] 9.5 Create integrated farming advice for livestock, fisheries, medicinal plants (Requirement 6.5)

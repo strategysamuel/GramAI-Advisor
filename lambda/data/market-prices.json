@@ -1,0 +1,122 @@
+[
+  {
+    "crop": "Paddy",
+    "price": 2000,
+    "unit": "per quintal",
+    "market": "Thanjavur Mandi",
+    "state": "Tamil Nadu",
+    "district": "Thanjavur",
+    "priceRange": { "min": 1800, "max": 2200 },
+    "demand": "High",
+    "trend": "Stable",
+    "lastUpdated": "2026-02-28"
+  },
+  {
+    "crop": "Wheat",
+    "price": 2100,
+    "unit": "per quintal",
+    "market": "Delhi Mandi",
+    "state": "Delhi",
+    "district": "Central Delhi",
+    "priceRange": { "min": 1900, "max": 2300 },
+    "demand": "Moderate",
+    "trend": "Rising",
+    "lastUpdated": "2026-02-28"
+  },
+  {
+    "crop": "Cotton",
+    "price": 6500,
+    "unit": "per quintal",
+    "market": "Ahmedabad Mandi",
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "priceRange": { "min": 6000, "max": 7000 },
+    "demand": "High",
+    "trend": "Rising",
+    "lastUpdated": "2026-02-28"
+  },
+  {
+    "crop": "Sugarcane",
+    "price": 300,
+    "unit": "per quintal",
+    "market": "Muzaffarnagar Mandi",
+    "state": "Uttar Pradesh",
+    "district": "Muzaffarnagar",
+    "priceRange": { "min": 280, "max": 320 },
+    "demand": "High",
+    "trend": "Stable",
+    "lastUpdated": "2026-02-28"
+  },
+  {
+    "crop": "Maize",
+    "price": 1800,
+    "unit": "per quintal",
+    "market": "Bangalore Mandi",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "priceRange": { "min": 1600, "max": 2000 },
+    "demand": "Moderate",
+    "trend": "Stable",
+    "lastUpdated": "2026-02-28"
+  },
+  {
+    "crop": "Soybean",
+    "price": 4200,
+    "unit": "per quintal",
+    "market": "Indore Mandi",
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "priceRange": { "min": 4000, "max": 4500 },
+    "demand": "High",
+    "trend": "Rising",
+    "lastUpdated": "2026-02-28"
+  },
+  {
+    "crop": "Groundnut",
+    "price": 5500,
+    "unit": "per quintal",
+    "market": "Rajkot Mandi",
+    "state": "Gujarat",
+    "district": "Rajkot",
+    "priceRange": { "min": 5200, "max": 5800 },
+    "demand": "Moderate",
+    "trend": "Stable",
+    "lastUpdated": "2026-02-28"
+  },
+  {
+    "crop": "Tomato",
+    "price": 1500,
+    "unit": "per quintal",
+    "market": "Pune Mandi",
+    "state": "Maharashtra",
+    "district": "Pune",
+    "priceRange": { "min": 1200, "max": 1800 },
+    "demand": "High",
+    "trend": "Volatile",
+    "lastUpdated": "2026-02-28"
+  },
+  {
+    "crop": "Onion",
+    "price": 2000,
+    "unit": "per quintal",
+    "market": "Nashik Mandi",
+    "state": "Maharashtra",
+    "district": "Nashik",
+    "priceRange": { "min": 1800, "max": 2500 },
+    "demand": "High",
+    "trend": "Rising",
+    "lastUpdated": "2026-02-28"
+  },
+  {
+    "crop": "Potato",
+    "price": 1200,
+    "unit": "per quintal",
+    "market": "Agra Mandi",
+    "state": "Uttar Pradesh",
+    "district": "Agra",
+    "priceRange": { "min": 1000, "max": 1400 },
+    "demand": "Moderate",
+    "trend": "Stable",
+    "lastUpdated": "2026-02-28"
+  }
+]
